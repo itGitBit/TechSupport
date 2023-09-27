@@ -1,0 +1,32 @@
+.layout {
+    height: 100%;
+    background-color: #FFFEDB;
+    text-align: center;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 18% 85% 5%;
+}
+.layout .Menu{
+    grid-column: span 12;
+    grid-row: 1;
+}
+
+.layout>* {
+
+    height: 100%;
+}
+.layout>header, footer {
+  grid-column: span 12;
+}
+.layout .home{
+  display: block;
+}
+.layout>aside {
+  grid-column: span 2;
+}
+
+.layout>main {
+  grid-column: span 10;   
+} 
+
